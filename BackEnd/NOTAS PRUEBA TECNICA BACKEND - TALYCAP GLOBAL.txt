@@ -1,0 +1,116 @@
+NOTAS PRUEBA TECNICA BACKEND - TALYCAP GLOBAL
+
+El script de creación de la bd se encuentra en el archivo "Sql DB.sql"
+
+La documentación de Swagger se puede ver en "swagger.json"
+
+La documentación para probar en postman está en "TalycapGlobal Clientes v1.postman_collection.json"
+
+Para mapear la base de datos
+dotnet ef dbcontext scaffold Name=ConnectionStrings:ConnectionString Microsoft.EntityFrameworkCore.SqlServer --output-dir Models --context MyDbContext --data-annotations --force
+
+
+--------------------------------------------------------------------------
+
+POST: https://localhost:7158/api/Clientes
+
+REQUEST 1:
+{
+  "idTipoDocumento": 1,
+  "numeroDocumento": 123456789,
+  "nombreCompleto": "Cristian Correa",
+  "fechaNacimiento": "1998-07-28T06:40:49.649Z",
+  "empresa": "TalycapGlobal",
+  "activo": true,
+  "fechaCreacion": "2026-01-24T06:40:49.649Z"
+}
+
+RESPONSE 1:
+{
+  "filasAfectadas": 1
+}
+
+REQUEST 2:
+{
+  "idTipoDocumento": 1,
+  "numeroDocumento": 987654321,
+  "nombreCompleto": "Camilo Florez",
+  "fechaNacimiento": "2000-07-28T06:40:49.649Z",
+  "empresa": "TalycapGlobal V2",
+  "activo": true,
+  "fechaCreacion": "2026-01-24T06:40:49.649Z"
+}
+
+RESPONSE 2:
+{
+  "filasAfectadas": 1
+}
+--------------------------------------------------------------------------
+
+GET: https://localhost:7158/api/Clientes
+
+RESPONSE:
+[
+  {
+    "id": 1,
+    "idTipoDocumento": 1,
+    "numeroDocumento": 123456789,
+    "nombreCompleto": "Cristian Correa",
+    "fechaNacimiento": "1998-07-28T00:00:00",
+    "empresa": "TalycapGlobal",
+    "activo": true,
+    "fechaCreacion": "2026-01-24T01:41:55.507"
+  },
+  {
+    "id": 2,
+    "idTipoDocumento": 1,
+    "numeroDocumento": 987654321,
+    "nombreCompleto": "Camilo Florez",
+    "fechaNacimiento": "2000-07-28T00:00:00",
+    "empresa": "TalycapGlobal V2",
+    "activo": true,
+    "fechaCreacion": "2026-01-24T01:42:52.86"
+  }
+]
+--------------------------------------------------------------------------
+
+GET: https://localhost:7158/api/Clientes/123456789
+
+RESPONSE:
+{
+  "id": 1,
+  "idTipoDocumento": 1,
+  "numeroDocumento": 123456789,
+  "nombreCompleto": "Cristian Correa",
+  "fechaNacimiento": "1998-07-28T00:00:00",
+  "empresa": "TalycapGlobal",
+  "activo": true,
+  "fechaCreacion": "2026-01-24T01:41:55.507"
+}
+--------------------------------------------------------------------------
+
+PUT: https://localhost:7158/api/Clientes/1
+
+REQUEST:
+{
+  "id": 1,
+  "idTipoDocumento": 2,
+  "numeroDocumento": 123456789,
+  "nombreCompleto": "Cristian Correa",
+  "fechaNacimiento": "1998-07-28T00:00:00",
+  "empresa": "TalycapGlobal TEMPORAL",
+  "activo": true,
+  "fechaCreacion": "2026-01-24T01:41:55.507"
+}
+
+RESPONSE:
+{
+  "filasAfectadas": 1
+}
+--------------------------------------------------------------------------
+DELETE: https://localhost:7158/api/Clientes/2
+
+RESPONSE:
+{
+  "filasAfectadas": 1
+}

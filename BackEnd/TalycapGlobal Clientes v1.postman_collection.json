@@ -1,0 +1,432 @@
+{
+  "info": {
+    "_postman_id": "c327bb29-4859-46b8-bbf3-8cb672093472",
+    "name": "TalycapGlobal Clientes v1",
+    "description": "TalycapGlobal Clientes API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "14553891"
+  },
+  "item": [
+    {
+      "name": "api",
+      "item": [
+        {
+          "name": "Clientes",
+          "item": [
+            {
+              "name": "{id}",
+              "item": [
+                {
+                  "name": "/api/Clientes/:id",
+                  "request": {
+                    "method": "PUT",
+                    "header": [
+                      {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                      }
+                    ],
+                    "body": {
+                      "mode": "raw",
+                      "raw": "{\n  \"id\": 2034,\n  \"idTipoDocumento\": 9966,\n  \"numeroDocumento\": 4312,\n  \"nombreCompleto\": \"string\",\n  \"fechaNacimiento\": \"1972-03-28T08:07:41.958Z\",\n  \"empresa\": \"string\",\n  \"activo\": true,\n  \"fechaCreacion\": \"1974-01-18T08:15:34.897Z\"\n}",
+                      "options": {
+                        "raw": {
+                          "headerFamily": "json",
+                          "language": "json"
+                        }
+                      }
+                    },
+                    "url": {
+                      "raw": "{{baseUrl}}/api/Clientes/:id",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "api",
+                        "Clientes",
+                        ":id"
+                      ],
+                      "variable": [
+                        {
+                          "key": "id",
+                          "value": "6095"
+                        }
+                      ]
+                    }
+                  },
+                  "response": [
+                    {
+                      "name": "/api/Clientes/:id",
+                      "originalRequest": {
+                        "method": "PUT",
+                        "header": [
+                          {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                          }
+                        ],
+                        "body": {
+                          "mode": "raw",
+                          "raw": "{\n  \"id\": 1,\n  \"idTipoDocumento\": 2,\n  \"numeroDocumento\": 123456789,\n  \"nombreCompleto\": \"Cristian Correa\",\n  \"fechaNacimiento\": \"1998-07-28T00:00:00\",\n  \"empresa\": \"TalycapGlobal TEMPORAL\",\n  \"activo\": true,\n  \"fechaCreacion\": \"2026-01-24T01:41:55.507\"\n}",
+                          "options": {
+                            "raw": {
+                              "headerFamily": "json",
+                              "language": "json"
+                            }
+                          }
+                        },
+                        "url": {
+                          "raw": "{{baseUrl}}/api/Clientes/:id",
+                          "host": [
+                            "{{baseUrl}}"
+                          ],
+                          "path": [
+                            "api",
+                            "Clientes",
+                            ":id"
+                          ],
+                          "variable": [
+                            {
+                              "key": "id",
+                              "value": "1"
+                            }
+                          ]
+                        }
+                      },
+                      "status": "OK",
+                      "code": 200,
+                      "_postman_previewlanguage": null,
+                      "header": [
+                        {
+                          "key": "Content-Type",
+                          "value": "application/json; charset=utf-8"
+                        },
+                        {
+                          "key": "Date",
+                          "value": "Sat, 24 Jan 2026 07:10:01 GMT"
+                        },
+                        {
+                          "key": "Server",
+                          "value": "Kestrel"
+                        },
+                        {
+                          "key": "Transfer-Encoding",
+                          "value": "chunked"
+                        }
+                      ],
+                      "cookie": [],
+                      "body": "{\n    \"filasAfectadas\": 1\n}"
+                    }
+                  ]
+                },
+                {
+                  "name": "/api/Clientes/:id",
+                  "request": {
+                    "method": "DELETE",
+                    "header": [],
+                    "url": {
+                      "raw": "{{baseUrl}}/api/Clientes/:id",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "api",
+                        "Clientes",
+                        ":id"
+                      ],
+                      "variable": [
+                        {
+                          "key": "id",
+                          "value": "6095"
+                        }
+                      ]
+                    }
+                  },
+                  "response": [
+                    {
+                      "name": "/api/Clientes/:id",
+                      "originalRequest": {
+                        "method": "DELETE",
+                        "header": [],
+                        "url": {
+                          "raw": "{{baseUrl}}/api/Clientes/:id",
+                          "host": [
+                            "{{baseUrl}}"
+                          ],
+                          "path": [
+                            "api",
+                            "Clientes",
+                            ":id"
+                          ],
+                          "variable": [
+                            {
+                              "key": "id",
+                              "value": "2"
+                            }
+                          ]
+                        }
+                      },
+                      "status": "OK",
+                      "code": 200,
+                      "_postman_previewlanguage": null,
+                      "header": [
+                        {
+                          "key": "Content-Type",
+                          "value": "application/json; charset=utf-8"
+                        },
+                        {
+                          "key": "Date",
+                          "value": "Sat, 24 Jan 2026 07:10:45 GMT"
+                        },
+                        {
+                          "key": "Server",
+                          "value": "Kestrel"
+                        },
+                        {
+                          "key": "Transfer-Encoding",
+                          "value": "chunked"
+                        }
+                      ],
+                      "cookie": [],
+                      "body": "{\n    \"filasAfectadas\": 1\n}"
+                    }
+                  ]
+                },
+                {
+                  "name": "/api/Clientes/:id",
+                  "request": {
+                    "auth": {
+                      "type": "noauth"
+                    },
+                    "method": "GET",
+                    "header": [],
+                    "url": {
+                      "raw": "{{baseUrl}}/api/Clientes/:id",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "api",
+                        "Clientes",
+                        ":id"
+                      ],
+                      "variable": [
+                        {
+                          "key": "id",
+                          "value": "1"
+                        }
+                      ]
+                    }
+                  },
+                  "response": [
+                    {
+                      "name": "/api/Clientes/:id",
+                      "originalRequest": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                          "raw": "{{baseUrl}}/api/Clientes/:id",
+                          "host": [
+                            "{{baseUrl}}"
+                          ],
+                          "path": [
+                            "api",
+                            "Clientes",
+                            ":id"
+                          ],
+                          "variable": [
+                            {
+                              "key": "id",
+                              "value": "1"
+                            }
+                          ]
+                        }
+                      },
+                      "status": "OK",
+                      "code": 200,
+                      "_postman_previewlanguage": null,
+                      "header": [
+                        {
+                          "key": "Content-Type",
+                          "value": "application/json; charset=utf-8"
+                        },
+                        {
+                          "key": "Date",
+                          "value": "Sat, 24 Jan 2026 07:07:34 GMT"
+                        },
+                        {
+                          "key": "Server",
+                          "value": "Kestrel"
+                        },
+                        {
+                          "key": "Transfer-Encoding",
+                          "value": "chunked"
+                        }
+                      ],
+                      "cookie": [],
+                      "body": "{\n    \"id\": 1,\n    \"idTipoDocumento\": 2,\n    \"numeroDocumento\": 123456789,\n    \"nombreCompleto\": \"Cristian Correa\",\n    \"fechaNacimiento\": \"1998-07-28T00:00:00\",\n    \"empresa\": \"TalycapGlobal TEMPORAL\",\n    \"activo\": true,\n    \"fechaCreacion\": \"2026-01-24T01:41:55.507\"\n}"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "/api/Clientes",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "{{baseUrl}}/api/Clientes",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "api",
+                    "Clientes"
+                  ]
+                }
+              },
+              "response": [
+                {
+                  "name": "/api/Clientes",
+                  "originalRequest": {
+                    "method": "GET",
+                    "header": [],
+                    "url": {
+                      "raw": "{{baseUrl}}/api/Clientes",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "api",
+                        "Clientes"
+                      ]
+                    }
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "_postman_previewlanguage": null,
+                  "header": [
+                    {
+                      "key": "Content-Type",
+                      "value": "application/json; charset=utf-8"
+                    },
+                    {
+                      "key": "Date",
+                      "value": "Sat, 24 Jan 2026 07:05:38 GMT"
+                    },
+                    {
+                      "key": "Server",
+                      "value": "Kestrel"
+                    },
+                    {
+                      "key": "Transfer-Encoding",
+                      "value": "chunked"
+                    }
+                  ],
+                  "cookie": [],
+                  "body": "[\n    {\n        \"id\": 1,\n        \"idTipoDocumento\": 2,\n        \"numeroDocumento\": 123456789,\n        \"nombreCompleto\": \"Cristian Correa\",\n        \"fechaNacimiento\": \"1998-07-28T00:00:00\",\n        \"empresa\": \"TalycapGlobal TEMPORAL\",\n        \"activo\": true,\n        \"fechaCreacion\": \"2026-01-24T01:41:55.507\"\n    }\n]"
+                }
+              ]
+            },
+            {
+              "name": "/api/Clientes",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"idTipoDocumento\": 1,\n  \"numeroDocumento\": 987654321,\n  \"nombreCompleto\": \"Camilo Florez\",\n  \"fechaNacimiento\": \"2000-07-28T06:40:49.649Z\",\n  \"empresa\": \"TalycapGlobal V2\",\n  \"activo\": true,\n  \"fechaCreacion\": \"2026-01-24T06:40:49.649Z\"\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/api/Clientes",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "api",
+                    "Clientes"
+                  ]
+                }
+              },
+              "response": [
+                {
+                  "name": "/api/Clientes",
+                  "originalRequest": {
+                    "method": "POST",
+                    "header": [
+                      {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                      }
+                    ],
+                    "body": {
+                      "mode": "raw",
+                      "raw": "{\n  \"idTipoDocumento\": 1,\n  \"numeroDocumento\": 987654321,\n  \"nombreCompleto\": \"Camilo Florez\",\n  \"fechaNacimiento\": \"2000-07-28T06:40:49.649Z\",\n  \"empresa\": \"TalycapGlobal V2\",\n  \"activo\": true,\n  \"fechaCreacion\": \"2026-01-24T06:40:49.649Z\"\n}",
+                      "options": {
+                        "raw": {
+                          "headerFamily": "json",
+                          "language": "json"
+                        }
+                      }
+                    },
+                    "url": {
+                      "raw": "{{baseUrl}}/api/Clientes",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "api",
+                        "Clientes"
+                      ]
+                    }
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "_postman_previewlanguage": null,
+                  "header": [
+                    {
+                      "key": "Content-Type",
+                      "value": "application/json; charset=utf-8"
+                    },
+                    {
+                      "key": "Date",
+                      "value": "Sat, 24 Jan 2026 07:08:24 GMT"
+                    },
+                    {
+                      "key": "Server",
+                      "value": "Kestrel"
+                    },
+                    {
+                      "key": "Transfer-Encoding",
+                      "value": "chunked"
+                    }
+                  ],
+                  "cookie": [],
+                  "body": "{\n    \"filasAfectadas\": 1\n}"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "https://localhost:7158"
+    }
+  ]
+}
