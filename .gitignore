@@ -1,0 +1,62 @@
+# =========================
+# .NET / Visual Studio
+# =========================
+## Build results
+bin/
+obj/
+Debug/
+Release/
+[Bb]uild/
+[Ll]ogs/
+
+## Visual Studio files
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+## NuGet
+*.nupkg
+*.snupkg
+packages/
+*.nuget.props
+*.nuget.targets
+
+## Others
+*.dll
+*.exe
+*.pdb
+*.cache
+*.log
+*.dbmdl
+*.bak
+*.mdf
+*.ldf
+
+# =========================
+# Angular / Node.js
+# =========================
+## Dependencies
+node_modules/
+jspm_packages/
+
+## Build output
+dist/
+tmp/
+out-tsc/
+coverage/
+
+## Angular specific
+.angular/
+.angular/cache/
+
+## IDEs
+.vscode/
+.idea/
+
+## Misc
+*.env
+*.local
+*.DS_Store
+Thumbs.db
