@@ -1,0 +1,43 @@
+<div class="container mt-4">
+  <mat-tab-group dynamicHeight>
+    <mat-tab>
+      <ng-template mat-tab-label>
+        <mat-icon class="me-2">movie</mat-icon>
+        <span>Películas</span>
+      </ng-template>
+      <div class="row">
+        <div class="col-12">
+          <mat-card class="mat-elevation-z4 mb-3">
+            <mat-card-header>
+              <mat-card-title>Listado de Películas</mat-card-title>
+            </mat-card-header>
+            <mat-card-content>
+              <app-movies></app-movies>
+            </mat-card-content>
+          </mat-card>
+        </div>
+      </div>
+    </mat-tab>
+
+    <mat-tab>
+      <ng-template mat-tab-label>
+        <mat-icon class="me-2">settings_system_daydream</mat-icon>
+        <span>Clima</span>
+      </ng-template>
+      <div class="row">
+        <div class="col-12">
+          <mat-card class="mat-elevation-z4 mb-3">
+            <mat-card-header>
+              <mat-card-title>Clima</mat-card-title>
+            </mat-card-header>
+            <mat-card-content>
+              <app-weathers></app-weathers>
+            </mat-card-content>
+          </mat-card>
+        </div>
+      </div>
+    </mat-tab>
+  </mat-tab-group>
+
+  <router-outlet></router-outlet>
+</div>
