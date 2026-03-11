@@ -21,8 +21,8 @@ Operating System  : win32 x64
 
 ## Instalación
 Clona el repositorio y entra en la carpeta del proyecto:
-git clone https://github.com/tu-usuario/tu-repo.git
-cd tu-repo
+git clone https://github.com/camilocorrea2898/TalycapGlobalFullStack.git.git
+cd TalycapGlobalFullStack\FrontEnd\TalycapGlobal
 
 Instala las dependencias:
 npm install
